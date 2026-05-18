@@ -64,13 +64,12 @@ modal.onclick = (e) => {
     }
 };
 
-const bgVideo = document.getElementById("bg-video");
+const bgAudio = document.getElementById("bg-audio");
 
-// Desmutear el video de fondo en la primera interacción del usuario
+// Reproducir el audio de fondo en la primera interacción del usuario
 const enableAudio = () => {
-    if (bgVideo && bgVideo.muted) {
-        bgVideo.muted = false;
-        bgVideo.play().catch(e => console.log("Autoplay bloqueado:", e));
+    if (bgAudio) {
+        bgAudio.play().catch(e => console.log("Autoplay bloqueado:", e));
     }
     document.removeEventListener("click", enableAudio);
     document.removeEventListener("touchstart", enableAudio);
