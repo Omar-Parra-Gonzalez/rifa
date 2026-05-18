@@ -1,0 +1,169 @@
+ body {
+     margin: 0;
+     font-family: "Montserrat", sans-serif;
+     background: #0e1a2b;
+     color: #ffffff;
+     overflow-x: hidden;
+ }
+
+ header {
+     text-align: center;
+     padding: 40px 20px;
+ }
+
+ header h1 {
+     font-size: 52px;
+     font-weight: 800;
+     color: #4da3ff;
+     margin-bottom: 10px;
+ }
+
+ header p {
+     font-size: 18px;
+     color: #bcd6ff;
+     max-width: 1000px;
+     margin: 0 auto;
+     text-align: center;
+ }
+
+ .specs-container {
+     max-width: 600px;
+     margin: 30px auto;
+     text-align: left;
+     background: rgba(255, 255, 255, 0.05);
+     padding: 25px 35px;
+     border-radius: 12px;
+     border: 1px solid rgba(255, 255, 255, 0.1);
+ }
+
+ .specs-container h3 {
+     color: #4da3ff;
+     margin-bottom: 20px;
+     font-size: 22px;
+ }
+
+ .specs-list {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ .specs-list li {
+     margin-bottom: 12px;
+     font-size: 18px;
+     color: #bcd6ff;
+     line-height: 1.6;
+     display: flex;
+     align-items: flex-start;
+ }
+ 
+ .ticket-info {
+     margin-top: 20px;
+     font-size: 20px;
+     font-weight: 600;
+     color: #ffd700; /* Color dorado para el precio */
+ }
+
+ .carousel-container {
+     max-width: 1000px;
+     margin: 40px auto;
+     position: relative;
+     padding: 10px;
+ }
+
+ .carousel {
+     display: flex;
+     gap: 16px;
+     overflow-x: auto;
+     scroll-behavior: smooth;
+     padding-bottom: 10px;
+ }
+
+ .carousel::-webkit-scrollbar {
+     height: 10px;
+ }
+
+ .carousel::-webkit-scrollbar-thumb {
+     background: #4da3ff;
+     border-radius: 10px;
+ }
+
+ .carousel img,
+ .carousel video {
+     width: 260px;
+     border-radius: 12px;
+     cursor: pointer;
+     transition: transform 0.25s;
+     border: 3px solid #1d3557;
+     object-fit: cover;
+ }
+
+ .carousel img:hover,
+ .carousel video:hover {
+     transform: scale(1.05);
+     border-color: #4da3ff;
+ }
+
+ .btn {
+     position: absolute;
+     top: 45%;
+     transform: translateY(-50%);
+     background: #4da3ff;
+     border: none;
+     padding: 14px;
+     border-radius: 50%;
+     cursor: pointer;
+     font-size: 20px;
+     color: #0e1a2b;
+     font-weight: 700;
+ }
+
+ #prev {
+     left: -5px;
+ }
+
+ #next {
+     right: -5px;
+ }
+
+ .btn:hover {
+     background: #76b9ff;
+ }
+
+ .modal {
+     display: none;
+     position: fixed;
+     inset: 0;
+     background: rgba(0, 0, 0, 0.85);
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+ }
+
+ .modal img,
+ .modal video {
+     max-width: 90%;
+     max-height: 90%;
+     border-radius: 12px;
+     border: 4px solid #4da3ff;
+ }
+
+ .close {
+     position: absolute;
+     top: 20px;
+     right: 30px;
+     font-size: 32px;
+     cursor: pointer;
+     color: #ffffff;
+     z-index: 10;
+ }
+
+ #modal-prev {
+     left: 20px;
+     z-index: 10;
+ }
+
+ #modal-next {
+     right: 20px;
+     z-index: 10;
+ }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoPRO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/png" href="./Imagenes/LOGO-GOPRO-1.png">
+</head>
+
+<body>
+    <header>
+        <h1>Especificaciones</h1>
+        <p class="intro-text">📸 ¡GRAN RIFA DE UNA GOPRO HERO NUEVA! 📸<br>
+            ¿Te vas de viaje, a la piscina o te gustan las aventuras? ¡Esta cámara es para ti!</p>
+
+        <div class="specs-container">
+            <h3>🔥 Ficha técnica del premio:</h3>
+            <ul class="specs-list">
+                <li>✔ Graba en Full HD (1080p a 30fps y 720p a 60fps para cámara lenta).</li>
+                <li>✔ Totalmente sumergible hasta 40 metros bajo el agua 🌊.</li>
+                <li>✔ Fotos de 5MP con modo ráfaga y Time-Lapse.</li>
+                <li>✔ Lente ultra gran angular para capturar paisajes completos.</li>
+                <li>✔ Súper compacta, ligera y resistente a golpes.</li>
+            </ul>
+        </div>
+
+        <p class="ticket-info">🎫 Boleta a solo $10.000 💸 <br>
+            Juega con las últimas dos cifras del Chontico Día. ¡No te quedes sin tu número! 🏁</p>
+    </header>
+    <div class="carousel-container">
+        <button class="btn" id="prev">◀</button>
+        <button class="btn" id="next">▶</button>
+        <div class="carousel" id="carousel">
+            <video id="bg-video" src="./Imagenes/WhatsApp Video 2026-05-18 at 6.45.34 AM.mp4" autoplay loop playsinline
+                muted></video>
+            <img src="./Imagenes/Interna-de-producto_-acordion-2_-LOGO-GOPRO-1.png">
+            <img src="./Imagenes/WhatsApp Image 2026-05-18 at 6.45.18 AM (2).jpeg">
+            <img src="./Imagenes/WhatsApp Image 2026-05-18 at 6.45.18 AM (1).jpeg">
+            <img src="./Imagenes/WhatsApp Image 2026-05-18 at 6.45.18 AM.jpeg">
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <span class="close" id="close">✖</span>
+        <img id="modal-img">
+        <video id="modal-video" controls autoplay muted style="display: none;"></video>
+        <button class="btn" id="modal-prev">◀</button>
+        <button class="btn" id="modal-next">▶</button>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
